@@ -1,2 +1,4 @@
+'use strict';
+
 // jshint devel:true
-console.log('\'Allo \'Allo!');
+console.log('Tic Tac Toe');
