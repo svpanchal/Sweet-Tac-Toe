@@ -12,13 +12,16 @@ body {
 table {
   margin: 0 auto;
   border-radius:10px;
+	background: rgba(255,255,255,0.5);
 }
+$cellSize: 100px;
+
 td {
   border: 1px solid grey;
-  width: 200px;
-  height: 200px;
+  width: $cellSize;
+  height: $cellSize;
   text-align: center;
-  font-size: 8em;
+  font-size: 4em;
   box-sizing:border-box;
 }
 
@@ -54,7 +57,6 @@ tfoot tr td{
 
 @mixin color {
 	color:white;
-
 }
 
 .X, .O {
@@ -73,7 +75,8 @@ tfoot tr td{
 }
 
 #reset {
-  padding: 5px;
+	margin-top: 15px;
+  padding: 10px;
   width: 200px;
   font-size: 1.5em;
   border-radius: 10px;

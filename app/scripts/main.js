@@ -1,8 +1,6 @@
 // jshint devel:true
 console.log('Tic Tac Toe!');
 
-//
-
 var boxes = document.getElementsByTagName('td');
 var turnText = document.querySelector('.playerTurn');
 var counter = 1;
@@ -21,7 +19,7 @@ var winningCombinations = [
   [2, 4, 6]
 ];
 
-//If this button is clicked, clear all boxes and reset the game.
+//When this button is clicked, clear all boxes and reset the game.
 function resetBoard() {
   'use strict';
   for (var i = boxes.length - 1; i >= 0; i--) {
@@ -38,7 +36,7 @@ function resetBoard() {
 function checkForWin(movesArray, name) {
   'use strict';
   // loop over the first array of winning combinations
-  for (i = 0; i < winningCombinations.length; i++) {
+  for (var i = 0; i < winningCombinations.length; i++) {
     // reset the winCounter each time
     winCounter = 0;
     // loop over each individual array
@@ -49,7 +47,7 @@ function checkForWin(movesArray, name) {
       }
       // If winCounter === 3, then all 3 moves comprise a winning combination and game is over and a winner is declared.
       if (winCounter === 3) {
-      alert('Congrats Player ' + name + ', you won!');
+      swal('Congrats Player ' + name + ', you won!');
         resetBoard();
       }
     }
@@ -78,7 +76,7 @@ function playXorO(event) {
     // if the counter is greater than or equal to 10, declare the game a draw.
     if (counter >= 10) {
       turnText.innerHTML = 'Game Over!';
-      var conf = confirm('It is a draw, want a rematch?');
+      var conf = confirm('Tie game, want a rematch?');
       if (conf) {
         resetBoard();
       }
@@ -101,6 +99,7 @@ function addResetListener() {
   resetButton.addEventListener('click', resetBoard);
 }
 
+//initiates game play
 function start() {
   'use strict';
   playXandOListener();
