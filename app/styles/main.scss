@@ -6,8 +6,15 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 body {
 	background-color: white;
   background-image: url('/images/symphony.png');
-  background-size: cover;
+  background-repeat: repeat;
 	font-family: 'Josefin Sans';
+	position: relative;
+}
+h1 {
+	text-align: center;
+	font-size: 4em;
+	font-weight: bolder;
+	color: pink;
 }
 table {
   margin: 0 auto;
@@ -83,7 +90,7 @@ tfoot tr td{
   cursor: pointer;
 }
 
-#reset:hover{
-  background: #b8bdee;
-  border-color: white;
-}
+// #reset:hover{
+//   background: #b8bdee;
+//   border-color: white;
+// }

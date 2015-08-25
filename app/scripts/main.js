@@ -30,7 +30,7 @@ function resetBoard() {
   XMoves = [];
   winCounter = 0;
   counter = 1;
-  turnText.innerHTML = 'Kick off the game, Player X!';
+  turnText.innerHTML = 'Kick off the game, Player X';
 }
 
 function checkForWin(movesArray, name) {
