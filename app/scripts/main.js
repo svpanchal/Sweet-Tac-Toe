@@ -31,7 +31,7 @@ function playXorO(event){
       OMoves.push(parseInt(event.target.getAttribute("data-num")));
       event.target.innerHTML = "O";
       event.target.setAttribute("class","O");
-      turnText.innerHTML = "It is X's turn";
+      turnText.innerHTML = "Your move, Player X";
       counter++;
       checkForWin(OMoves, "O");
     }
@@ -39,7 +39,7 @@ function playXorO(event){
       XMoves.push(parseInt(event.target.getAttribute("data-num")));
       event.target.innerHTML = "X";
       event.target.setAttribute("class","X");
-      turnText.innerHTML = "It is O's turn";
+      turnText.innerHTML = "Your move, Player O";
       counter++;
       checkForWin(XMoves, "X");
     }
