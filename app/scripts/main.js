@@ -2,7 +2,7 @@
 console.log('Tic Tac Toe!');
 
 //
-window.onload = start;
+
 var boxes = document.getElementsByTagName('td');
 var turnText = document.querySelector('.playerTurn');
 var counter = 1;
@@ -106,3 +106,4 @@ function start() {
   playXandOListener();
   addResetListener();
 }
+window.onload = start;

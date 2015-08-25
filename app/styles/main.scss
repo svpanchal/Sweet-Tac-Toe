@@ -3,7 +3,12 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-
+body {
+	background-color: white;
+  background-image: url('/images/symphony.png');
+  background-size: cover;
+	font-family: 'Josefin Sans';
+}
 table {
   margin: 0 auto;
   border-radius:10px;
@@ -47,7 +52,13 @@ tfoot tr td{
   text-align: center;
 }
 
+@mixin color {
+	color:white;
+
+}
+
 .X, .O {
+	@include color;
   border-radius: 10px;
 }
 .X {
