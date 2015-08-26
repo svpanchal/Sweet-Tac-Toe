@@ -1,3 +1,5 @@
+'use strict';
+
 /*jshint devel:true */
 console.log('Tic Tac Toe!');
 
@@ -7,7 +9,7 @@ var counter = 1;
 var winCounter = 0;
 var OMoves = [];
 var XMoves = [];
-var swal = [];
+var swal;
 
 var winningCombinations = [
   [0, 1, 2],
@@ -22,7 +24,6 @@ var winningCombinations = [
 
 //When this button is clicked, clear all boxes and reset the game.
 function resetBoard() {
-  'use strict';
   for (var i = boxes.length - 1; i >= 0; i--) {
     boxes[i].innerHTML = '';
     boxes[i].setAttribute('class', 'clear');
@@ -35,7 +36,6 @@ function resetBoard() {
 }
 
 function checkForWin(movesArray, name) {
-  'use strict';
   // loop over the first array of winning combinations
   for (var i = 0; i < winningCombinations.length; i++) {
     // reset the winCounter each time
@@ -60,7 +60,7 @@ function checkForWin(movesArray, name) {
 }
 
 function playXorO(event) {
-  'use strict';
+  console.log('playXorO');
   if (event.target.innerHTML.length === 0) {
     if (counter % 2 === 0) {
       OMoves.push(parseInt(event.target.getAttribute('data-num')));
@@ -88,11 +88,13 @@ function playXorO(event) {
        resetBoard();
     }
   }
+  else {
+    console.log('square already taken with value = ' + event.target.innerHTML);
+  }
 }
 
 //Makes each cell clickable
 function playXandOListener() {
-  'use strict';
   for (var i = boxes.length - 1; i >= 0; i--) {
     boxes[i].addEventListener('click', playXorO);
   }
@@ -100,15 +102,13 @@ function playXandOListener() {
 
 //Makes 'Reset game' button clickable
 function addResetListener() {
-  'use strict';
   var resetButton = document.getElementById('reset');
   resetButton.addEventListener('click', resetBoard);
 }
 
-//initiates game play
-function start() {
-  'use strict';
+//initiates game play after DOM is loaded
+$(function() {
   playXandOListener();
   addResetListener();
-}
-window.onload = start;
+  resetBoard();
+});
