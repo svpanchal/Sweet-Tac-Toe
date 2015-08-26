@@ -15,5 +15,5 @@
   <li>A link to the source code is available on GitHub <a href="https://github.com/svpanchal/tttproject1" target ="_blank">here.</a></li>
 
 <h5>
-  <img src="https://github.com/svpanchal/tttproject1/blob/master/app/images/IMG_6281.jpeg">
+!(http://i60.tinypic.com/dxirsp.jpg)
 </h5>
