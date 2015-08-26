@@ -1,4 +1,4 @@
-// jshint devel:true
+/*jshint devel:true */
 console.log('Tic Tac Toe!');
 
 var boxes = document.getElementsByTagName('td');
@@ -7,6 +7,7 @@ var counter = 1;
 var winCounter = 0;
 var OMoves = [];
 var XMoves = [];
+var swal = [];
 
 var winningCombinations = [
   [0, 1, 2],
@@ -42,11 +43,11 @@ function checkForWin(movesArray, name) {
     // loop over each individual array
     for (var j = 0; j < winningCombinations[i].length; j++) {
       // If the number in winning combo array is === a number in moves array, add to winCounter
-      if (movesArray.indexOf(winningCombinations[i][j]) !== -1) {
+      if(movesArray.indexOf(winningCombinations[i][j]) !== -1) {
         winCounter++;
       }
       // If winCounter === 3, then all 3 moves comprise a winning combination and game is over and a winner is declared.
-      if (winCounter === 3) {
+      if(winCounter === 3) {
       swal({
         title: 'Congrats!',
         text: 'Player ' + name + ' wins the game',
