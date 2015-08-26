@@ -1,6 +1,6 @@
 <h2> Project 1 - Tic Tac Toe </h2>
 
-<h3>This version of Tic Tac Toe is for multiple players, made with HTML, CSS/SASS and JavaScript/jQuery. It was scaffolded by Yeoman, using Grunt and Bower.</h3>
+<p1>This version of Tic Tac Toe is for multiple players, made with HTML, CSS/SASS and JavaScript/jQuery. It was scaffolded by Yeoman, using Grunt and Bower.</p1>
 
 <h4>Project Deliverables</h4>
 
