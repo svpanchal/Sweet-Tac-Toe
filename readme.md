@@ -13,7 +13,7 @@
 </ul>
 
 <ul>
-  <li>Link to GitHub <a href="https://github.com/svpanchal/tttproject1" target ="_blank"></li>
+  <li>Link to GitHub <a href="https://github.com/svpanchal/tttproject1" target ="_blank"></a></li>
 </ul>
 
 <h5>
