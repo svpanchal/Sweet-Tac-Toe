@@ -2,29 +2,38 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-// endbower
+
 body {
 	background-color: white;
-  background-image: url('/images/symphony.png');
+  background-image: url('/images/bluepaisley.jpg');
   background-repeat: repeat;
 	font-family: 'Josefin Sans';
+	color: grey;
 	position: relative;
 }
+
 h1 {
 	text-align: center;
-	font-size: 4em;
-	font-weight: bolder;
-	color: pink;
+	font-size: 5em;
+	color: #FF8DA1;
+	font-family: 'Lobster', cursive;
+
 }
+
+table, th, td {
+	border: 2px solid white;
+}
+
 table {
   margin: 0 auto;
   border-radius:10px;
-	background: rgba(255,255,255,0.5);
+	background: rgba(255,255,255,0.45);
 }
+
 $cellSize: 100px;
 
 td {
-  border: 1px solid grey;
+  border: 2px solid white;
   width: $cellSize;
   height: $cellSize;
   text-align: center;
@@ -79,6 +88,7 @@ tfoot tr td{
 
 .clear {
   background: white;
+	background: rgba(255,255,255,0.45);
 }
 
 #reset {
@@ -86,8 +96,11 @@ tfoot tr td{
   padding: 10px;
   width: 200px;
   font-size: 1.5em;
+	font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
+	color: #FF8DA1;
+	background-color: #cccccc;
 }
 
 // #reset:hover{
