@@ -51,7 +51,7 @@ function checkForWin(movesArray, name) {
       swal({
         title: 'Congrats!',
         text: 'Player ' + name + ' wins the game',
-        imageUrl: '/images/star.png'
+        imageUrl: '../images/star.png'
       });
         resetBoard();
       }
@@ -83,7 +83,7 @@ function playXorO(event) {
       swal({
         title: 'Tie Game!',
         text: 'Want a rematch?',
-        imageUrl: '/images/redo.png'
+        imageUrl: '../images/redo.png'
       });
        resetBoard();
     }
