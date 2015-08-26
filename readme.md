@@ -12,10 +12,6 @@
   <li>My game is hosted by BitBalloon, give it a spin <a href="http://svptictactoe.bitballoon.com/" target ="_blank">here.</a></li>
 </ul>
 
-<ul>
-  <li>Link to GitHub <a href="https://github.com/svpanchal/tttproject1" target ="_blank"></a></li>
-</ul>
-
 <h5>
   <img src="https://github.com/svpanchal/tttproject1/blob/master/app/images/IMG_6281.jpeg">
 </h5>
