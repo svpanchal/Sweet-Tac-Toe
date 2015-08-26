@@ -15,6 +15,5 @@
   <li>A link to the source code is available on GitHub <a href="https://github.com/svpanchal/tttproject1" target ="_blank">here.</a></li>
 
 <h5>
-![Image of Wireframes]
-(http://i60.tinypic.com/dxirsp.jpg)
+  <img src="http://tinypic.com?ref=dxirsp">
 </h5>
