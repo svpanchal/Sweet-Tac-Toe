@@ -28,6 +28,7 @@ table {
   margin: 0 auto;
   border-radius:10px;
 	background: rgba(255,255,255,0.45);
+	-webkit-animation:canvasAnimation 5s;
 }
 
 $cellSize: 100px;
@@ -39,6 +40,11 @@ td {
   text-align: center;
   font-size: 4em;
   box-sizing:border-box;
+	-webkit-animation:canvasAnimation 5s;
+}
+
+@-webkit-keyframes canvasAnimation {
+ 0%  {-webkit-transform:rotate(90deg);left:0px; top:0px;}
 }
 
 td:hover{
@@ -79,9 +85,11 @@ tfoot tr td{
 	@include color;
   border-radius: 15px;
 }
+
 .X {
   background: grey;
 }
+
 .O {
   background: pink;
 }
