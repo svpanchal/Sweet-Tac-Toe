@@ -47,7 +47,11 @@ function checkForWin(movesArray, name) {
       }
       // If winCounter === 3, then all 3 moves comprise a winning combination and game is over and a winner is declared.
       if (winCounter === 3) {
-      swal('Congrats Player ' + name + ', you won!');
+      swal({
+        title: 'Congrats!',
+        text: 'Player ' + name + ' wins the game',
+        imageUrl: '/images/star.png'
+      });
         resetBoard();
       }
     }
@@ -75,11 +79,12 @@ function playXorO(event) {
     }
     // if the counter is greater than or equal to 10, declare the game a draw.
     if (counter >= 10) {
-      turnText.innerHTML = 'Game Over!';
-      var conf = confirm('Tie game, want a rematch?');
-      if (conf) {
-        resetBoard();
-      }
+      swal({
+        title: 'Tie Game!',
+        text: 'Want a rematch?',
+        imageUrl: '/images/redo.png'
+      });
+       resetBoard();
     }
   }
 }
